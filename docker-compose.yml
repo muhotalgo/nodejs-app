@@ -34,7 +34,7 @@ services:
     image: muhtal/webapp
     build: web
     ports:
-    - 3001:30001
+    - 3001:3001
     environment:
     - DB_HOST=db
     depends_on:
