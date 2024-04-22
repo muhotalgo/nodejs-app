@@ -15,9 +15,9 @@ pipeline {
     	stage('docker hub push') {
             steps {
                 sh '''
- 		        docker login -u muhotalgo -p cupleona23$
-                docker push muhotalgo/nodejsapp
-		        '''
+			docker login -u muhotalgo -p cupleona23$
+	                docker push muhotalgo/nodejsapp
+		'''
             }
         }
 	    stage('microk8s run pod') {
