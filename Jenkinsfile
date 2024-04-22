@@ -22,7 +22,7 @@ pipeline {
         }
 	    stage('microk8s run pod') {
             steps {
-                sh ' microk8s kubectl run app1 --image=siestageek/nodejsapp '
+                sh ' microk8s kubectl run app1 --image=muhotalgo/nodejsapp '
             }
         }
     }
