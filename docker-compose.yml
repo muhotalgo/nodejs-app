@@ -31,12 +31,13 @@ services:
     - pgadmin-data:/var/lib/pgadmin
 
   web:
-    image: muhtal/webapp
+    image: "${IMAGE_NAME}"
     build: web
     ports:
     - 3001:3001
     environment:
     - DB_HOST=db
+      IMAGE_NAME=muhtal/webapp
     depends_on:
     - db
 
